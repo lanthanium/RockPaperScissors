@@ -7,7 +7,7 @@ function computerPlay()
     else return "Scissors";
 }
 
-function playRound(playerSelection, computerSelection) //returns 0 if tie, 1 if player wins, 2 if player loses
+function playRound(playerSelection, computerSelection)
 {
     if (playerSelection == "Rock")
     {
@@ -72,7 +72,7 @@ function playRound(playerSelection, computerSelection) //returns 0 if tie, 1 if 
         else
         {
          
-            promptDisplay.textContent="Tie. Scissors cancel";
+            promptDisplay.textContent="Tie. You both chose scissors";
             
         }
     }
