@@ -14,19 +14,19 @@ function playRound(playerSelection, computerSelection) //returns 0 if tie, 1 if 
         if (computerSelection == "Rock")
         {
             promptDisplay.textContent = "Tie. You both chose Rock";
-            rounds++;
+            
            
         } 
         else if (computerSelection == "Paper") 
         {
             computerScore++;
-            rounds++;
+           
             promptDisplay.textContent = "You lose this round. Paper wraps rock";
           
         }
         else
         {
-            rounds++;
+            
             playerScore++;
             promptDisplay.textContent = "You win this round.  Rock crushes scissors.";
             
@@ -37,20 +37,20 @@ function playRound(playerSelection, computerSelection) //returns 0 if tie, 1 if 
         if (computerSelection == "Rock")
         {
             playerScore++;
-            rounds++;
+            
             promptDisplay.textContent="You win this round. Paper wraps rock";
            
         } 
         else if (computerSelection == "Paper") 
         {
             promptDisplay.textContent="Tie. You both chose Paper";
-            rounds++;
+           
             
         }
         else
         {
             computerScore++;
-            rounds++;
+          
             promptDisplay.textContent="You lose this round. Scissor cuts paper";
            
         }
@@ -59,21 +59,19 @@ function playRound(playerSelection, computerSelection) //returns 0 if tie, 1 if 
     {
         if (computerSelection == "Rock")
         {
-            computerScore++;
-            rounds++;
+            computerScore++;  
             promptDisplay.textContent="You lose this round. Rock crushes scissors";
           
         } 
         else if (computerSelection == "Paper") 
         {
             playerScore++;
-            rounds++;
             promptDisplay.textContent="You win this round. Scissor cuts paper";
            
         }
         else
         {
-            rounds++;
+         
             promptDisplay.textContent="Tie. Scissors cancel";
             
         }
@@ -83,7 +81,6 @@ function playRound(playerSelection, computerSelection) //returns 0 if tie, 1 if 
     computerScoreDisplay.textContent = "Computer Score: " + computerScore;
     userOutput.textContent = playerSelection;
     pcOutput.textContent = computerSelection;
-    console.log(rounds);
     if (playerScore == 5)
     {
         promptDisplay.textContent = "You win the match! Make another selection to start another match or press Reset.";
