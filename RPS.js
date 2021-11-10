@@ -154,3 +154,5 @@ resetBtn.addEventListener('click', () => {
     pcOutput.textContent = computerSelection;
     promptDisplay.textContent = "Let's play Rock Paper Scissors. First to 5 wins! Click the buttons above!";
 })
+
+//commenting
