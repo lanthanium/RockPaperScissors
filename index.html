@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src = "RPS.js"></script>
+    <title>Rock-Paper-Scissors</title>
+    <link rel = "stylesheet" href="style.css">
+    
 </head>
 <body>
-    
+    <div class = "buttons">
+        <button type = "button" class = "rock">Rock</button>
+        <button type = "button" class = "paper">Paper</button>
+        <button type = "button" class = "scissors">Scissors</button>
+    </div>
+    <div class = "reset">
+        <button class = "buttonReset">Reset</button>
+    </div>
+    <div class = "scoreBoard">
+        <div id = "user" class = "user"></div>
+        <div id = "computer" class = "computer"></div>
+        <div id = "round" class = "round"></div>
+        <div id = "result" class = "results"></div>
+    </div>
+    <div class = "choiceContainer">
+        <div class = "choices">
+            <div class = "userChoice">You Chose: </div>
+            <div class = "pcChoice">Computer Chose: </div>
+        </div>
+        <div class = "outputChoice">
+            <div class = "userOutput"></div>
+            <div class = "pcOutput"></div>
+        </div>
+    </div>
+
+    <div class = "footer"> Copyright © Lanthanium 2021 </div>
+    <script src = "RPS.js"></script>
 </body>
 </html>
