@@ -1,4 +1,3 @@
-
 function computerPlay()
 {
     let decision = Math.floor(Math.random()*3);
