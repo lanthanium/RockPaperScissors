@@ -154,4 +154,4 @@ resetBtn.addEventListener('click', () => {
     promptDisplay.textContent = "Let's play Rock Paper Scissors. First to 5 wins! Click the buttons above!";
 })
 
-//commenting
+//commentin
