@@ -112,41 +112,32 @@ computerScoreDisplay.textContent = "Computer Score: " + computerScore;
 let promptDisplay = document.querySelector('.results');
 promptDisplay.textContent = "Let's play Rock Paper Scissors. First to 5 wins! Click the buttons above!";
 
-let pcChoice = document.querySelector('.pcChoice');
-let userChoice = document.querySelector('.userChoice');
-
 let userOutput = document.querySelector('.userOutput');
 let pcOutput = document.querySelector('.pcOutput');
 
-
-const rockBtn = document.querySelector('.rock');
-rockBtn.addEventListener('click', () => {
-    playerSelection = "Rock";
+function handleClick(event)
+{
     computerSelection = computerPlay();
-    playRound(playerSelection, computerSelection);
-})
+    playRound(event.target.className, computerSelection);
+}
 
-const paperBtn = document.querySelector('.paper');
-paperBtn.addEventListener('click', () => {
-    playerSelection = "Paper";
-    computerSelection = computerPlay();
-    playRound(playerSelection, computerSelection);
-})
+const rockBtn = document.querySelector('.Rock');
+rockBtn.addEventListener('click', handleClick);
 
-const scissorBtn = document.querySelector('.scissors');
-scissorBtn.addEventListener('click', () => {
-    playerSelection = "Scissors";
-    computerSelection = computerPlay();
-    playRound(playerSelection, computerSelection);
-})
+const paperBtn = document.querySelector('.Paper');
+paperBtn.addEventListener('click', handleClick);
+
+const scissorBtn = document.querySelector('.Scissors');
+scissorBtn.addEventListener('click',handleClick);
+
 
 
 const resetBtn = document.querySelector('.buttonReset');
 resetBtn.addEventListener('click', () => {
     playerScore = 0;
     computerScore = 0;
-    playerSelection = "";
-    computerSelection = "";  
+    playerSelection = '';
+    computerSelection = '';
     userScoreDisplay.textContent = "User Score: " + playerScore;
     computerScoreDisplay.textContent = "Computer Score: " + computerScore;
     userOutput.textContent = playerSelection;
